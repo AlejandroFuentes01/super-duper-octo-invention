@@ -36,6 +36,7 @@ body {
     margin-bottom: 100px;
 }
 
+/* Estilos existentes para el menú de navegación */
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
@@ -53,22 +54,41 @@ body {
     color: white;
     font-weight: 400;
     letter-spacing: 0px;
+    position: relative;
 }
 
-.nav-menu ul li a.active {
-    position: relative; /* Necesario para posicionar la línea */
-}
-
-.nav-menu ul li a.active::after {
+/* Estilo para la línea indicadora */
+.nav-menu ul li a::after {
     content: '';
     position: absolute;
-    bottom: -2px; /* Ajusta según la distancia que se necesite */
+    bottom: -2px;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
+/* Mostrar la línea para el elemento activo */
+.nav-menu ul li a.active::after {
+    opacity: 1;
+}
+
+/* No mostrar la línea para la opción de contacto */
+.nav-menu ul li a.btn-contacto::after {
+    display: none;
+}
+
+/* Ocultar la línea activa cuando se hace hover en otras opciones */
+.nav-menu ul:hover li a.active::after {
+    opacity: 0;
+}
+
+/* Mostrar la línea en hover, excepto para la opción de contacto */
+.nav-menu ul li a:not(.btn-contacto):hover::after {
+    opacity: 1;
+}
 /* Estilos para el texto principal */
 .hero-content {
     text-align: left;
@@ -430,5 +450,3 @@ body {
     opacity: 1;
     }
 }
-
-
