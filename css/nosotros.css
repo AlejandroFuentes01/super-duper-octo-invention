@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
+    background-color: #FCFCFC;
+    background-image: url('../images/background_inicio.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/* Estilos del contenedor HERO */
+/* Contenedor Principal */
+.contenedor-principal {
+    max-width: 1500px;
+    background-size: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* eSTILOS PARA EL LOGO */
+
+#logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.slide-in-fwd-center {
+	-webkit-animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Estilos del header */
+.main-header {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Estilos existentes para el menú de navegación */
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0px;
+    position: relative;
+}
+
+/* Estilo para la línea indicadora */
+.nav-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar la línea para el elemento activo */
+.nav-menu ul li a.active::after {
+    opacity: 1;
+}
+
+/* No mostrar la línea para la opción de contacto */
+.nav-menu ul li a.btn-contacto::after {
+    display: none;
+}
+
+/* Ocultar la línea activa cuando se hace hover en otras opciones */
+.nav-menu ul:hover li a.active::after {
+    opacity: 0;
+}
+
+/* Mostrar la línea en hover, excepto para la opción de contacto */
+.nav-menu ul li a:not(.btn-contacto):hover::after {
+    opacity: 1;
+}
+/* Estilos para el texto principal */
+.hero-content {
+    text-align: left;
+    padding: 50px 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 p {
+    margin: 0; /* Remueve los márgenes por defecto de los párrafos */
+    padding: 0; /* Remueve cualquier padding */
+    font-size: 70px;
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-left-2 {
+	-webkit-animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-left-3 {
+	-webkit-animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.black-text {
+    color: black;
+}
+
+.blue-text {
+    color: #008AF8;
+}
+
+.dark-blue-text {
+    color: #003B76;
+}
+
+.subtext {
+    font-size: 1.55rem;
+    color: #666666;
+    margin-bottom: 90px;
+    font-weight: 500;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Estilos para el botón ¡CONTACTENOS!*/
+.btn-contacto {
+    background-color: #008AF8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: -10px;
+    cursor: pointer; /* Añadido para mejorar la usabilidad */
+    font-weight: 400; /* Cambia a fuente regular */
+}
+
+
+.btn-contacto:hover {
+    background-color: #005f99;
+}
+
+.bounce-top {
+	-webkit-animation: bounce-top 1s both;
+	animation: bounce-top 1s both;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+/* Animaciones */
+
+/* Animación para el h1 del header*/
+
+@-webkit-keyframes slide-in-left {
+    0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+/*--------------------------------------------------------*/
+
+/* Estilos para la sección "Sobre Nosotros" */
+.sobre-nosotros {
+    padding: 20px 0;
+    margin-top: 10%; /* Asegúrate de que no haya margen superior */
+}
+
+
+.contenedor-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imagen-nosotros img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+
+.texto-nosotros {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.texto-nosotros h2 {
+    font-size: 32px;
+    color: #000000; /* Color negro para "Sobre" */
+    margin-bottom: 20px;
+}
+
+.texto-nosotros .highlight {
+    color: #008AF8; /* Color azul para "Nosotros" */
+}
+
+.texto-nosotros p {
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/*-------------------------------------------*/
+
+/* Estilos para la sección "Misión y Visión" */
+.mision-vision {
+    padding: 20px 0;
+}
+
+.contenedor-mision-vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.texto-mision-vision {
+    max-width: 600px;
+}
+
+.texto-mision-vision h2 {
+    font-size: 32px;
+    color: #000000; /* Color negro para "Nuestra" */
+    margin-bottom: 20px;
+}
+
+.texto-mision-vision .highlight-blue {
+    color: #008AF8; /* Color azul para "Misión y Visión" */
+}
+
+.texto-mision-vision p {
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.6;
+    
+}
+
+.imagen-mision-vision img {
+    width: 400px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+
+/*-------------------------------------------*/
+/* Estilos para la sección "Testimonio" */
+.testimonio {
+    padding: 20px 0;
+}
+
+.contenedor-testimonio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imagen-testimonio img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.texto-testimonio {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.texto-testimonio h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.comillas {
+    font-size: 70px;
+    color: #008AF8;
+    font-family: 'Georgia', serif;
+    line-height: 1;
+}
+
+.testimonio-texto {
+    font-size: 2rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.testimonio-autor {
+    font-size: 1rem;
+    color: #008AF8;
+    font-weight: bold;
+}
+
+/*------------------------------------------*/
+.nuestros-ingenieros {
+    position: relative;
+    padding: 50px 0;
+    background-size: cover;
+    text-align: center;
+}
+
+.texto-ingenieros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.texto-ingenieros h2 {
+    font-size: 32px;
+    color: #000000; /* Color negro para "Nuestros" */
+    margin-bottom: 20px;
+}
+
+.texto-ingenieros .highlight-blue {
+    color: #008AF8; /* Color azul para "Ingenieros" */
+}
+
+.texto-ingenieros p {
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 80%; /* Define un ancho máximo para el párrafo */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.imagen-ingenieros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.imagen-ingenieros img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+}
