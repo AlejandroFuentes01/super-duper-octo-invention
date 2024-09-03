@@ -1,16 +1,18 @@
 body {
-    background-image: url('../images/background_inicio.png');
-    background-repeat: no-repeat;
-    background-position: top right;
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
+    background-color: #FCFCFC;
 }
 
 /* Estilos del contenedor HERO */
 /* Contenedor Principal */
 .contenedor-principal {
+    background-image: url('../images/background_inicio.png');
+    background-repeat: no-repeat;
+    background-position: top right;
     max-width: 1500px;
+    background-size: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -137,7 +139,7 @@ body {
 
 .subtext {
     font-size: 1.55rem;
-    color: #949494;
+    color: #666666;
     margin-bottom: 90px;
     font-weight: 500;
 }
@@ -224,10 +226,11 @@ body {
 }
 
 .nosotros-content p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 24px;
     max-width: 85%;
+    color: #666666;
 }
 
 .cta-button {
