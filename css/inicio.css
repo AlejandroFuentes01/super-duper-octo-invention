@@ -3,14 +3,14 @@ body {
     padding: 0;
     font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
     background-color: #FCFCFC;
+    background-image: url('../images/background_inicio.png');
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 /* Estilos del contenedor HERO */
 /* Contenedor Principal */
 .contenedor-principal {
-    background-image: url('../images/background_inicio.png');
-    background-repeat: no-repeat;
-    background-position: top right;
     max-width: 1500px;
     background-size: 1000px;
     margin: 0 auto;
@@ -188,7 +188,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .nosotros-images {
@@ -209,7 +209,7 @@ body {
 .large-image {
     grid-column: 1 / span 2;
     border-radius: 14px;
-    height: 200px;
+    height: 237.px;
 }
 
 .nosotros-content {
@@ -217,8 +217,8 @@ body {
 }
 
 .nosotros-content h2 {
-    font-size: 34px;
-    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;;
 }
 
 .highlight {
