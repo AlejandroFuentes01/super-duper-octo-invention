@@ -218,7 +218,8 @@ body {
 
 .nosotros-content h2 {
     font-size: 30px;
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .highlight {
@@ -244,6 +245,7 @@ body {
     width: 100px;
     text-align: center;
     font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* Responsive adjustments */
@@ -263,7 +265,6 @@ body {
 
 /* Estilos para la Sección de Servicios */
 
-
 .servicios-section {
     max-width: 1500px;
     margin: 0 auto;
@@ -275,20 +276,18 @@ body {
     margin-top: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 15px; /* Reducido de 20px a 15px para disminuir el espacio entre los items */
 }
 
-.main-image-container {
-    grid-row: span 2;
+.service-item {
+    width: 90%; /* Aumentado de 80% a 90% para reducir el espacio entre los items */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px; /* Reducido de 20px a 15px para disminuir el espacio interno */
     display: flex;
     flex-direction: column;
-}
-
-.main-image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.11) 1px 2px 3px 1px;
 }
 
 .navigation {
@@ -314,34 +313,33 @@ body {
     margin-top: 120px;
 }
 
-.service-item {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.11) 1px 2px 3px 1px
+.logo-image {
+    width: 30px; /* Ajusta según el tamaño deseado */
+    height: auto;
 }
 
+/* Ajuste adicional para la imagen del servicio */
 .service-image {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reducido de 10px a 8px */
     border-radius: 15px;
+    margin-top: 8px; /* Reducido de 10px a 8px */
 }
 
+/* Ajuste para el título del servicio */
 .service-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reducido de 10px a 8px */
     color: #666666;
 }
 
+/* Ajuste para la descripción del servicio si es necesario */
 .service-description {
     font-size: 0.9em;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px; /* Reducido de 15px a 12px si existe */
     color: #666666;
 }
 
