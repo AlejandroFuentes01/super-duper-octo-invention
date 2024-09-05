@@ -5,6 +5,7 @@
 // al hacer clic.
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Script para la navegación activa
     const navLinks = document.querySelectorAll('.nav-menu ul li a:not(.btn-contacto)');
     const navMenu = document.querySelector('.nav-menu ul');
     let currentPath = window.location.pathname;
@@ -45,5 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.forEach(l => l.classList.remove('active', 'hover-active'));
             this.classList.add('hover-active');
         });
+    });
+
+    
+
+    // ANIMACIÓN PARA BOTONES CUANDO SE LES HACE CLICK
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('press-animate')) {
+            console.log('Animación activada'); // Debugging
+            const button = event.target;
+            button.classList.add('press-animate-active');
+            
+            // Remover la clase después de 200ms para finalizar la animación
+            setTimeout(() => {
+                button.classList.remove('press-animate-active');
+            }, 200);
+        }
     });
 });

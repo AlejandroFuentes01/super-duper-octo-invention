@@ -248,6 +248,10 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+.cta-button:hover {
+    background-color: #005f99;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .services-container {
@@ -333,6 +337,7 @@ body {
     font-weight: bold;
     margin-bottom: 8px; /* Reducido de 10px a 8px */
     color: #666666;
+    font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
 }
 
 /* Ajuste para la descripción del servicio si es necesario */
@@ -341,18 +346,128 @@ body {
     text-align: center;
     margin-bottom: 12px; /* Reducido de 15px a 12px si existe */
     color: #666666;
+    font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
+    
+}
+
+.button-wrapper {
+    margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
 .service-button {
     background-color: #0080ff;
     color: white;
+    font-family: 'DM Sans', sans-serif; /* Fuente que usamos en todo el texto de la página web */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: auto;
+}
+
+.service-button:hover {
+    background-color: #005f99;
+}
+
+.press-animate-active {
+    animation: buttonPressAnimation 0.2s ease-in-out;
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para la sección de años de experiencia */
+
+.exp-section {
+    padding: 50px 0;
+}
+
+.exp-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.exp-images {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.exp-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.large-image-exp {
+    grid-column: 1 / span 2;
+    border-radius: 14px;
+    height: 237.px;
+}
+
+.exp-content {
+    width: 50%;
+}
+
+.exp-content h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.highlight {
+    color: #008AF8;
+}
+
+.nosotros-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 85%;
+    color: #666666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008AF8;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #005f99;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-images, .services-content {
+        width: 100%;
+    }
+
+    .services-images {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////*/
 
 /* Animaciones */
 
@@ -542,5 +657,19 @@ body {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
+    }
+}
+
+/* Animación para botón del carrusel Acerca de Nosotros */
+
+@keyframes buttonPressAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
     }
 }
