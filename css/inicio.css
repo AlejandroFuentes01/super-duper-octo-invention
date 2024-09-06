@@ -161,6 +161,8 @@ body {
     margin-top: -10px;
     cursor: pointer; /* Añadido para mejorar la usabilidad */
     font-weight: 400; /* Cambia a fuente regular */
+    
+    
 }
 
 
@@ -425,7 +427,7 @@ body {
     color: #008AF8;
 }
 
-.nosotros-content p {
+.exp-content p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -466,6 +468,147 @@ body {
     }
 }
 
+/*--------------------------------------------------------*/
+/* Estilos para la sección "Llamada a la Acción" */
+.cta-section {
+    margin-top: 3%;
+    padding: 70px 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    text-align: center;
+}
+
+.cta-container {
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.cta-container .highlight-blue {
+    color: #008AF8; /* Color azul para "proyecto" */
+}
+
+.cta-container p {
+    font-size: 25px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-container .highlight-bold {
+    font-weight: bold; /* Negrita para "comienza" y "excelencia digital" */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #008AF8;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+/*-------------------------------------------------------*/
+/* Footer Styles */
+footer {
+    margin-top: 1%;
+    padding: 80px 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FCFCFC;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajustamos la separación entre el logo y el texto */
+}
+
+.logo-footer img {
+    width: 60px; /* Aumentamos un poco el tamaño del logo para mejor visibilidad */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    color: #000000;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.logo-text strong {
+    font-weight: 700; /* El nombre "Leroc" en negritas para destacarlo */
+    color: #008AF8; /* Coloreamos "Leroc" en azul para resaltar la marca */
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+    color: #008AF8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a img {
+    width: 50px; /* Ajustamos el tamaño de los iconos sociales para mejor consistencia */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #666666;
+    margin: 5px 0;
+}
 
 /*///////////////////////////////////////////////////////////////////////////*/
 
